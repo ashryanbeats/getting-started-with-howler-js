@@ -8,9 +8,13 @@
 <body>
 	<div class="container text-center">
 		<h1>Getting started with Howler.js</h1>
+		<p class="lead">Enhance your apps with simple audio feedback</p>
+		<a id="show-basics" class="btn btn-link" href="#">The basics</a>
+		<a id="show-music" class="btn btn-link" href="#">The music</a>
+		<a id="show-mario" class="btn btn-link" href="#">The Mario</a>
 
-		<h2>The basics</h2>
-		<div class="row">
+		<div id="basics" class="row">
+			<h2>The basics</h2>
 			<div class="col-md-12">
 				<button class="btn btn-default" id="bell">
 					<i class="fa fa-bell-o"></i>
@@ -20,6 +24,9 @@
 					<button type="button" class="btn btn-default" id="trumpet-play">
 				  		<i class="fa fa-play"></i>
 					</button>
+					<button type="button" class="btn btn-default" id="trumpet-pause">
+						<i class="fa fa-pause"></i>
+					</button>
 					<button type="button" class="btn btn-default" id="trumpet-stop">
 						<i class="fa fa-stop"></i>
 					</button>
@@ -27,8 +34,8 @@
 			</div>
 		</div>
 
-		<h2>The music</h2>
-		<div class="row">
+		<div id="music" class="row">
+			<h2>The music</h2>
 			<div class="col-md-12">
 				<div class="btn-group" role="group">
 					<button type="button" class="btn btn-default" id="music-loop">
@@ -47,13 +54,16 @@
 						<i class="fa fa-sign-out"></i>
 					</button>
 
-					Volume
 				</div>
+				<input style="width: 10%; display: inline;" id="volume" type="range" min="0" max="100" value="70">
+			</div>
+			
+			<div class="col-md-12">
 			</div>
 		</div>
 
-		<h2>The Mario (sprites!)</h2>
-		<div class="row">
+		<div id="mario" class="row">
+			<h2>The Mario (sprites!)</h2>
 			<div class="col-md-2">
 				<img class="img-responsive" id="mario-jump" src="/images/mario-jump.png">
 			</div>

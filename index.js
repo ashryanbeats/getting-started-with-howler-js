@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
 	
 	// THE BASICS
 
@@ -25,6 +26,10 @@ $(document).ready(function() {
 
 	$("#trumpet-play").click(function() {
 		trumpet.play();
+	});
+
+	$("#trumpet-pause").click(function() {
+		trumpet.pause();
 	});
 
 	$("#trumpet-stop").click(function() {
@@ -68,6 +73,13 @@ $(document).ready(function() {
 	$("#music-fadeout").click(function() {
 		music.fadeOut(0, 2000);
 	});
+
+	$("#volume").mouseup(function(){
+		var vol = $("#volume").val() / 100;
+		
+		Howler.volume(vol);
+	});
+	// ======
 
 
 	// THE MARIO
@@ -145,6 +157,30 @@ $(document).ready(function() {
 	});
 	$("#mario-clear").click(function() {
 		marioComposite.play("marioClear");
+	});
+
+	// ======
+
+
+	// UI
+	$("#basics").hide();
+	$("#music").hide();
+	$("#mario").hide();
+
+	$("#show-basics").click(function() {
+		$("#music").hide();
+		$("#mario").hide();
+		$("#basics").fadeToggle();
+	});
+	$("#show-music").click(function() {
+		$("#basics").hide();
+		$("#mario").hide();
+		$("#music").fadeToggle();
+	});
+	$("#show-mario").click(function() {
+		$("#music").hide();
+		$("#basics").hide();
+		$("#mario").fadeToggle();
 	});
 
 });
