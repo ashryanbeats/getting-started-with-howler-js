@@ -1,0 +1,20 @@
+{
+  "name": "tech-talk-howler",
+  "version": "0.0.0",
+  "authors": [
+    "Ash Ryan <ash@ashryanbeats.com>"
+  ],
+  "main": "index.html",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "homepage": "http://ashryanbeats.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
