@@ -3,25 +3,76 @@
 <head>
 	<title>Getting started with Howler.js</title>
 	<link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="/bower_components/font-awesome/css/font-awesome.css">
 </head>
 <body>
 	<div class="container text-center">
 		<h1>Getting started with Howler.js</h1>
 
+		<h2>The basics</h2>
 		<div class="row">
 			<div class="col-md-12">
-				<button class="btn" id="bell">
-					Bell!
+				<button class="btn btn-default" id="bell">
+					<i class="fa fa-bell-o"></i>
 				</button>
 
-				<div class="btn-group" role="group" aria-label="...">
-				  <button type="button" class="btn btn-default">Left</button>
-				  <button type="button" class="btn btn-default">Middle</button>
-				  <button type="button" class="btn btn-default">Right</button>
+				<div class="btn-group" role="group">
+					<button type="button" class="btn btn-default" id="trumpet-play">
+				  		<i class="fa fa-play"></i>
+					</button>
+					<button type="button" class="btn btn-default" id="trumpet-stop">
+						<i class="fa fa-stop"></i>
+					</button>
 				</div>
 			</div>
 		</div>
 
+		<h2>The music</h2>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="btn-group" role="group">
+					<button type="button" class="btn btn-default" id="music-loop">
+						<i class="fa fa-repeat"></i>
+					</button>
+					<button type="button" class="btn btn-default" id="music-play">
+				  		<i class="fa fa-play"></i>
+					</button>
+					<button type="button" class="btn btn-default" id="music-stop">
+						<i class="fa fa-stop"></i>
+					</button>
+					<button type="button" class="btn btn-default" id="music-fadein">
+						<i class="fa fa-sign-in"></i>
+					</button>
+					<button type="button" class="btn btn-default" id="music-fadeout">
+						<i class="fa fa-sign-out"></i>
+					</button>
+
+					Volume
+				</div>
+			</div>
+		</div>
+
+		<h2>The Mario (sprites!)</h2>
+		<div class="row">
+			<div class="col-md-2">
+				<img class="img-responsive" id="mario-jump" src="/images/mario-jump.png">
+			</div>
+			<div class="col-md-2">
+				<img class="img-responsive" id="mario-coin" src="/images/coin.png">
+			</div>
+			<div class="col-md-2">
+				<img class="img-responsive" id="mario-pipe" src="/images/pipe.gif">
+			</div>
+			<div class="col-md-2">
+				<img class="img-responsive" id="mario-mushroom" src="/images/mushroom.JPG">
+			</div>
+			<div class="col-md-2">
+				<img class="img-responsive" id="mario-dies" src="/images/mario-dies.jpg">
+			</div>
+			<div class="col-md-2">
+				<img class="img-responsive" id="mario-clear" src="/images/stage-clear.jpg">
+			</div>
+		</div>
 	</div>
 
 
