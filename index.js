@@ -158,6 +158,14 @@ $(document).ready(function() {
 	$("#mario-clear").click(function() {
 		marioComposite.play("marioClear");
 	});
+	$("#mario-all").click(function() {
+		marioComposite.play("marioJump");
+		marioComposite.play("marioCoin");
+		marioComposite.play("marioPipe");
+		marioComposite.play("marioMushroom");
+		marioComposite.play("marioDies");
+		marioComposite.play("marioClear");
+	});
 
 	// ======
 

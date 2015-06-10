@@ -6,3 +6,12 @@
 	font-size: 11px;
 	margin-top: 50px;
 }
+
+.mario-button {
+  margin-top: 50px;
+}
+
+#volume {
+	width: 10%; 
+	display: inline;
+}
